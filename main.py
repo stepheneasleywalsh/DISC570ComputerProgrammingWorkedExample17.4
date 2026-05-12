@@ -1,12 +1,15 @@
-x = int(input('Give me a number more 1 or more, 100 or less but even: '))
+x = int(input("Give me an EVEN integer from 1 to 100: "))
+
+if x < 1:
+    print("That is too small, error!!!")
+
+if x > 100:
+    print("That is too big, error!!!")
+
+if x%2 == 1: # Remainder is 1 not 0
+    print("That is ODD not even, error!!!")
 
 if x >= 1:
     if x <= 100:
         if x%2 == 0:
-            print("Thank you")
-        else:
-            print("This is not even, it's odd")
-    else:
-        print("x is too big")
-else:
-    print("x is too small")
+            print("Thank you, that is EVEN and from 1 to 100")
